@@ -31,13 +31,13 @@ public class TrelloController {
 
         trelloBoards.forEach(trelloBoardDto -> {
 
-            System.out.println(trelloBoardDto.getName() + " - " + trelloBoardDto.getId());
+//            System.out.println(trelloBoardDto.getName() + " - " + trelloBoardDto.getId());
+            System.out.println(trelloBoardDto.getId() + " - " + trelloBoardDto.getBadges());
 
             System.out.println("This board contains lists: ");
 
             trelloBoardDto.getLists().forEach(trelloList ->
                     System.out.println(trelloList.getName() + " - " + trelloList.getId() + " - " + trelloList.isClosed()));
-
         });
     }
 
